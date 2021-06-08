@@ -14,9 +14,16 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'junit:junit:4.13.1'
+	implementation 'junit:junit:4.13.1'
 	implementation 'junit:junit:4.13.1'
 	implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+	//lombok 라이브러리 추가 시작
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testCompileOnly 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
+//lombok 라이브러리 추가 끝
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
